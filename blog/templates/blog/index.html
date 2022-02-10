@@ -1,0 +1,55 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %} My Blog {% endblock %}
+
+{% block css_files %}
+  <link rel="stylesheet" href="{% static 'blog/index.css' %}">
+{% endblock %}
+ 
+{% block content %}
+
+    <header id="main-navigation">
+      <h1><a href="">Django Blog</a></h1>
+      <nav>
+        <a href="">All Posts</a>
+      </nav>
+    </header>
+
+    <section id="welcome">
+      <header>
+        <img src="" alt="Blog Pogrammer ">
+        <h1>Django Blog</h1>
+        <p>The Is A Django Blog For Resume </p>
+      </header>
+    </section>
+
+    <section id="latest-posts"> 
+      <h2>My Latest Thoughts</h2>
+      <ul>
+        <li>
+          <article class="post">
+            <a href="">
+              <img src="" alt="Mountain Hiking">
+              <div class="post__content">
+                <h3>Mountain Hiking</h3>  
+                <p>The is nothing like the view you get when hiking the mountains</p>
+              </div>
+            </a>
+          </article>
+        </li>
+      </ul>
+    </section>
+
+    <section id="about">
+      <h2>What i Do</h2>
+      <p>
+        AbdElMegeed Ahmed Python Django Developer Working As A FreeLancer
+      </p>
+      <p>
+        My Goal IS To Keep Growing As A Developer <br>
+        And I Will be One of the Very few best in the World One Day
+      </p>
+    </section>
+
+{% endblock %}
